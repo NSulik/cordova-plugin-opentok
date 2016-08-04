@@ -72,8 +72,9 @@
     int width = [[command.arguments objectAtIndex:3] intValue];
     int height = [[command.arguments objectAtIndex:4] intValue];
     int zIndex = [[command.arguments objectAtIndex:5] intValue];
-
-    top = top + [UIApplication sharedApplication].statusBarFrame.size.height;
+    
+    // ns-04/08/16: removing unneeded status bar offset
+    // top = top + [UIApplication sharedApplication].statusBarFrame.size.height;
 
     NSLog(@"Dimensions: %d %d %d %d %d", top, left, width, height, zIndex);
 
@@ -114,7 +115,8 @@
     int height = [[command.arguments objectAtIndex:4] intValue];
     int zIndex = [[command.arguments objectAtIndex:5] intValue];
 
-    top = top + [UIApplication sharedApplication].statusBarFrame.size.height;
+    // ns-04/08/16: removing unneeded status bar offset
+    // top = top + [UIApplication sharedApplication].statusBarFrame.size.height;
 
     NSLog(@"Dimensions: %d %d %d %d %d", top, left, width, height, zIndex);
 
@@ -228,7 +230,8 @@
     int height = [[command.arguments objectAtIndex:4] intValue];
     int zIndex = [[command.arguments objectAtIndex:5] intValue];
 
-    top = top + [UIApplication sharedApplication].statusBarFrame.size.height;
+    // ns-04/08/16: removing unneeded status bar offset
+    // top = top + [UIApplication sharedApplication].statusBarFrame.size.height;
 
     NSLog(@"Dimensions: %d %d %d %d %d", top, left, width, height, zIndex);
 
